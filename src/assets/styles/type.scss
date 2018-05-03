@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans+Condensed:300|Source+Sans+Pro');
+
+@import '../icons/icons';
+
+@import 'theme';
+
+body {
+  font-family: $body-font;
+  font-size: 16px;
+  color: $body-color;
+}
+
+a {
+  cursor: pointer;
+  font-family: $feature-font;
+  color: $brand-primary;
+}
+
+h1, h2, h3 {
+  color: $header-color;
+  font-family: $feature-font;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.page-title {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 80px;
+    height: 3px;
+    background-color: $header-background;
+  }
+}
+
+p {
+  margin: 0px;
+}
+
+* + p {
+  margin-top: 15px;
+}
